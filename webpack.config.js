@@ -1,0 +1,19 @@
+const path=require("path");
+moudle.exports={
+    moudle:"development",
+    entry:{
+        entry:"./src/index.js"
+    },
+    output:{
+        path:path.resolve(__dirname,"./dist"),
+        filename:"main.js"
+    },
+    moudle:{},
+    plugins:[],
+    devServer:{
+        contentBase:path.resolve(__dirname,"./dist"),
+        host:"localhost",
+        port:"8080",
+        compress:true
+    }
+}
